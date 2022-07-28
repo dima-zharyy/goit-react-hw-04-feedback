@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { Global } from '@emotion/react';
-
-import Feedback from '../Feedback/Feedback';
-import Section from '../Section/Section';
-import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
-import Statistics from '../Statistics/Statistics';
-import Notification from '../Notification/Notification';
+import {
+  Feedback,
+  Section,
+  FeedbackOptions,
+  Statistics,
+  Notification,
+} from 'components';
 import { GlobalStyles } from './App.styled';
 
-class App extends Component {
+export class App extends Component {
   state = {
     good: 0,
     neutral: 0,
@@ -62,5 +63,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

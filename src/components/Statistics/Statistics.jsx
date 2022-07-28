@@ -2,13 +2,13 @@ import React from 'react';
 import { List, Item, Text } from './Statistics.styled';
 import PropTypes from 'prop-types';
 
-export default function Statistics({
+export const Statistics = ({
   totalFeedback,
   positiveFeedbackPercentage,
   good,
   neutral,
   bad,
-}) {
+}) => {
   return (
     <List>
       <Item>
@@ -33,7 +33,7 @@ export default function Statistics({
       </Item>
     </List>
   );
-}
+};
 
 Statistics.propTypes = {
   totalFeedback: PropTypes.number.isRequired,

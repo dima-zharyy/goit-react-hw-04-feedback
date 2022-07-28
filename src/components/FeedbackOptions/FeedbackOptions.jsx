@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { List, Item, Button } from './FeedbackOptions.styled';
 
-export default function FeedbackOptions({ options, onLeaveFeedback }) {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <List>
       {options.map(option => (
@@ -18,7 +18,7 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
       ))}
     </List>
   );
-}
+};
 
 FeedbackOptions.propTypes = {
   onLeaveFeedback: PropTypes.elementType.isRequired,
